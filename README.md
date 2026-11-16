@@ -43,6 +43,9 @@ An 11-page Power BI report built on California hospital utilization data (HCAI a
 
 ## Data and model
 
+ Data Modling <img width="1160" height="717" alt="image" src="https://github.com/user-attachments/assets/69c22493-5d31-41ae-8b07-6756c1189563" />
+
+
 - **Source:** California hospital utilization data (HCAI), delivered as one wide table.
 - **Model:** star schema. `Dim_Hospital` (501 rows, key `FAC_NO`) in the centre; 13 fact tables on the many side (bed capacity, bed days, discharges, ED, ED outcomes, monthly ED diversion, IC, surgery, cardiovascular, clinical programs, facility services, equipment, projects); relationships are many-to-one, single direction.
 - **Helper tables:** `Dim_ServiceLine`, `Dim_Service`, four What-if parameter tables for the Pressure Index.
